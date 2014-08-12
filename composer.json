@@ -1,0 +1,8 @@
+{
+    "require": {
+        "components/bootstrap": "~3.2"
+    },
+    "config": {
+        "component-dir": "source/components"
+    }
+}

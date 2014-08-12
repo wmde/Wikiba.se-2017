@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{{ site.title }} &mdash; {{ page.title }}</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="{{ site.url }}/components/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="{{ site.url }}/css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<div class="container">
+		<nav class="nav nav-pills main-nav">
+			<li>
+				<a href="{{ site.url }}/" class="home">
+					<img class="logo" src="{{ site.url }}/images/logo.png">
+				</a>
+			</li>
+			<li {% if page.nav_name == 'about' %}class="active"{% endif %}>
+				<a href="{{ site.url }}/about">About</a>
+			</li>
+			<li {% if page.nav_name == 'contribution' %}class="active"{% endif %}>
+				<a href="#">Contribution</a>
+			</li>
+			<li {% if page.nav_name == 'development' %}class="active"{% endif %}>
+				<a href="#">Development</a>
+			</li>
+			<li {% if page.nav_name == 'contact' %}class="active"{% endif %}>
+				<a href="#">Contact</a>
+			</li>
+		</nav>
+	</div>
+	{% if page.nav_name == 'home' %}
+		<div class="jumbotron banner">
+			<div class="banner-text container">
+				<picture class="logo">
+					<img src="{{ site.url }}/images/logo.png">
+				</picture>
+				<strong>Wikibase</strong> is the software that runs Wikidata
+				<ul class="sub">
+					<li>Wikibase allows the collaborative editing of structured data on top of MediaWiki.</li>
+					<li>Wikibase is an open source project, and everyone is welcome to join in development.</li>
+				</ul>
+			</div>
+		</div>
+	{% else %}
+		<hr class="nav-divide">
+	{% endif %}
+	<div class="container">
+		{% block content %}{% endblock %}
+	</div>
+</body>
+</html>

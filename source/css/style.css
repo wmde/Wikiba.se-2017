@@ -1,0 +1,28 @@
+.main-nav {
+	padding: 5px 0;
+}
+.main-nav a.home {
+	padding: 0;
+	margin-right: 20px;
+}
+.main-nav .home .logo {
+	height: 40px;
+}
+.nav-divide {
+	margin-top: 0;
+}
+
+.banner .logo {
+	float: left;
+	padding-right: 25px;
+}
+.banner .logo img {
+	height: 110px;
+}
+.banner-text {
+	font-size: 25px;
+}
+.banner-text .sub {
+	font-size: 20px;
+	list-style-position: inside;
+}
