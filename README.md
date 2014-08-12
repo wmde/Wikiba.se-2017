@@ -7,8 +7,8 @@ This repo contains the resources of the [wikiba.se website](http://wikiba.se).
 Get [Sculpin](https://sculpin.io/) if you do not have it yet:
 
     curl -O https://download.sculpin.io/sculpin.phar
-    php sculpin.phar install
-    php sculpin.phar generate --watch --server
+    chmod +x sculpin.phar
+    mv sculpin.phar /usr/bin/sculpin
 
 Run the install command:
 
