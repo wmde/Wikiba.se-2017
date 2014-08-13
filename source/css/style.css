@@ -1,5 +1,5 @@
 h1, h2 {
-	color: #3291cc;
+	color: #196999;
 }
 
 .main-nav {
@@ -13,7 +13,7 @@ h1, h2 {
 	height: 40px;
 }
 .nav-divide {
-	margin-top: 0;
+	margin: 0;
 	border-top: 5px solid #004166;
 }
 
@@ -21,6 +21,7 @@ h1, h2 {
 	background: #196999;
 	color: #fff;
 	padding: 30px 0;
+	margin-bottom: 0;
 	border: 5px solid #004166;
 	border-left: 0;
 	border-right: 0;
