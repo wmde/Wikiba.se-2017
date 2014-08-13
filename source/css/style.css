@@ -59,6 +59,19 @@ h1, h2 {
 	width: 30%;
 }
 
+.powered-by {
+	padding: 10px 0;
+	margin: 0;
+	color: #777;
+}
+.powered-by .project {
+	padding: 0 10px;
+	float: left;
+}
+.powered-by .project img {
+	height: 80px;
+}
+
 .features .feature {
 	border: 1px solid #4bb9ff;
 	font-size: 18px;
