@@ -39,6 +39,11 @@ h1, h2 {
 .banner-text {
 	font-size: 25px;
 }
+.banner-text a {
+	color: #fff;
+	text-decoration: underline;
+	font-weight: bold;
+}
 .banner-text .sub {
 	font-size: 20px;
 	list-style-position: inside;
