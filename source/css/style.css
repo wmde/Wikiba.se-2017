@@ -43,3 +43,13 @@ h1, h2 {
 	font-size: 20px;
 	list-style-position: inside;
 }
+
+.components .library {
+	width: 15%;
+}
+.components .source {
+	width: 10%;
+}
+.components .status {
+	width: 30%;
+}
