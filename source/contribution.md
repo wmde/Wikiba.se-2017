@@ -16,3 +16,8 @@ nav_name: contribution
 - [Wikibase API Documentation](https://www.mediawiki.org/wiki/Wikibase/API)
 - [Wikibase Components]({{site.url}}/components)
 - [Further development notes](https://www.mediawiki.org/wiki/Wikibase/Notes)
+
+<h2 id="download">Download</h2>
+<a class="btn btn-primary btn-lg" href="https://github.com/wikimedia/mediawiki-extensions-Wikibase">
+	<i class="fa fa-github-alt"></i> Get Wikibase
+</a>
