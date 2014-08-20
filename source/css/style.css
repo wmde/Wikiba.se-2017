@@ -62,8 +62,7 @@ h1, h2 {
 .powered-by {
 	margin-top: 10px;
 	padding-bottom: 20px;
-	background: #eee;
-	border-radius: 20px;
+	border-left: 1px solid #eee;
 }
 .powered-by h3 {
 	font-size: 18px;
