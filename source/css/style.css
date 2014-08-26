@@ -76,6 +76,20 @@ h1, h2 {
 	margin: 10px;
 }
 
+.project-list .project-image {
+	max-height: 100px;
+	max-width: 100px;
+}
+.project-list .row {
+	margin-top: 20px;
+}
+.project-list .row div {
+	padding-left: 0;
+}
+.project-list .project-headline {
+	margin-top: 5px;
+}
+
 .features {
 	margin-top: 10px;
 	padding: 0;
