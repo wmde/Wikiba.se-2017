@@ -59,6 +59,9 @@ h1, h2 {
 .components .status {
 	width: 30%;
 }
+.components td:last-child img {
+	height: 18px;
+}
 
 .powered-by {
 	margin-top: 10px;
