@@ -1,4 +1,5 @@
 composer.lock
 output_dev/
+output_prod/
 vendor/
 source/components/
