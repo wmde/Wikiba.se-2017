@@ -16,20 +16,13 @@
 					<img class="logo" src="{{ site.url }}/images/logo.png">
 				</a>
 			</li>
-            <li {% if page.nav_name == 'usage' %}class="active"{% endif %}>
-            <a href="{{ site.url }}/usage">Usage &amp; Installation</a>
-            </li>
+            <li {% if page.nav_name == 'applications' %}class="active"{% endif %}>
+                <a href="{{ site.url }}/applications">Applications</a>
             <li {% if page.nav_name == 'components' %}class="active"{% endif %}>
-            <a href="{{ site.url }}/components">Components</a>
+                <a href="{{ site.url }}/components">Components</a>
             </li>
-			<li {% if page.nav_name == 'contribution' %}class="active"{% endif %}>
-				<a href="{{ site.url }}/contribution">Contribution</a>
-			</li>
-			<li {% if page.nav_name == 'projects' %}class="active"{% endif %}>
-				<a href="{{ site.url }}/projects">Projects</a>
-			</li>
-			<li {% if page.nav_name == 'contact' %}class="active"{% endif %}>
-				<a href="{{ site.url }}/contact">Contact</a>
+			<li {% if page.nav_name == 'contribute' %}class="active"{% endif %}>
+				<a href="{{ site.url }}/contribute">Contribute</a>
 			</li>
 		</nav>
 	</div>
@@ -40,15 +33,11 @@
 					<img src="{{ site.url }}/images/logo.png">
 				</picture>
 				<div class="banner-text">
-					<strong>Wikibase</strong> is the software that runs <a class="wikidata" href="https://www.wikidata.org/">Wikidata</a>
-					<ul class="sub">
-						<li>Wikibase allows the collaborative editing of structured data on top of MediaWiki.</li>
-						<li>Wikibase is an open source project, and everyone is welcome to join in development.</li>
-					</ul>
-
-					<div class="get-wikibase">
-						<a href="{{ site.url }}/contribution#download" class="btn btn-lg">Get Wikibase now!</a>
-					</div>
+					Welcome to the <strong>Wikibase</strong> project
+					<p class="sub">
+                        Wikibase is a collection of applications and libraries for creating, managing and sharing structured data.
+                        It is an open source project, and everyone is welcome to join in development.
+					</p>
 				</div>
 			</div>
 		</div>
