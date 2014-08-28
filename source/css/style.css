@@ -98,6 +98,7 @@ h1, h2 {
 	padding: 0;
 }
 .features .feature {
+	clear: left;
 	font-size: 18px;
 	border-radius: 10px;
 	padding: 10px 10px 10px 0;
@@ -113,5 +114,3 @@ h1, h2 {
 	width: 100%;
 	color: #333;
 }
-
-

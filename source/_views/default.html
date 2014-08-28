@@ -12,8 +12,8 @@
 	<div class="container">
 		<nav class="nav nav-pills main-nav">
 			<li>
-				<a href="{{ site.url }}/" class="home">
-					<img class="logo" src="{{ site.url }}/images/logo.png">
+				<a href="{{ site.url }}/" class="home" title="Home">
+					<img class="logo" src="{{ site.url }}/images/logo.png" alt="WIKIBASE">
 				</a>
 			</li>
             <li {% if page.nav_name == 'applications' %}class="active"{% endif %}>
@@ -27,7 +27,7 @@
 		<div class="jumbotron banner">
 			<div class="container">
 				<picture class="logo">	
-					<img src="{{ site.url }}/images/logo.png">
+					<img src="{{ site.url }}/images/logo.png" alt="WIKIBASE">
 				</picture>
 				<div class="banner-text">
 					Welcome to the <strong>Wikibase</strong> project
