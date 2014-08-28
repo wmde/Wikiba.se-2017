@@ -2,7 +2,7 @@
 
 This repo contains the resources of the [wikiba.se website](http://wikiba.se).
 
-## Build
+## Installation
 
 Get [Sculpin](https://sculpin.io/) if you do not have it yet:
 
@@ -12,5 +12,14 @@ Get [Sculpin](https://sculpin.io/) if you do not have it yet:
 
 Run the install command:
 
-    sculpin install
+    composer install
+
+## Site generation
+
+For development:
+
     sculpin generate --watch --server
+    
+For deployment:
+
+    sculpin generate --env=prod
