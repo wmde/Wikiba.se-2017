@@ -2,6 +2,8 @@
 
 This repo contains the resources of the [wikiba.se website](http://wikiba.se).
 
+[![Build Status](https://travis-ci.org/wmde/Wikiba.se.svg?branch=master)](https://travis-ci.org/wmde/Wikiba.se)
+
 ## Installation
 
 Get [Sculpin](https://sculpin.io/) if you do not have it yet:
