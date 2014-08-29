@@ -28,12 +28,16 @@ class SmokeTest extends \PHPUnit_Framework_TestCase {
 		);
 	}
 
-	private function assertPageExists( $fileName ) {
+	public function testBootstrapCssIsWhereExpected() {
+		$this->assertRelativeFileExists( 'components/bootstrap/dist/css/bootstrap.min.css' );
+	}
+
+	private function assertRelativeFileExists( $fileName ) {
 		$this->assertFileExists( self::$PAGE_PATH . $fileName );
 	}
 
 	private function assertPageContains( $expected, $fileName ) {
-		$this->assertPageExists( $fileName );
+		$this->assertRelativeFileExists( $fileName );
 
 		$page = file_get_contents( self::$PAGE_PATH . $fileName );
 
