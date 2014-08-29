@@ -23,3 +23,11 @@ For development:
 For deployment:
 
     sculpin generate --env=prod
+
+## Running the tests
+
+Change into the root directory of the project and run
+
+    phpunit
+
+Note that you need to have "sculpin" available as command.
