@@ -110,6 +110,7 @@ h1, h2 {
 	height: 50px;
 	margin: 5px 10px;
 	color: #000;
+	cursor: default;
 }
 .features .feature .feature-text {
 	width: 100%;
