@@ -31,4 +31,4 @@ components. It's also possible to ask for support via the Wikidata project:
 - [Mailing Lists](https://www.mediawiki.org/wiki/Wikibase/Support)
 - [Twitter](https://twitter.com/wikidata)
 - [#wikidata on irc.freenode.net](irc://irc.freenode.net/wikidata) <sup>[connect](http://webchat.freenode.net/?channels=#wikidata)</sup>
-- [Contact the Wikidata Development Team](https://www.wikidata.org/wiki/Wikidata:Contact_the_development_team)
+- [Contact the development team](https://www.wikidata.org/wiki/Wikidata:Contact_the_development_team)
