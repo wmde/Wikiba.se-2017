@@ -9,7 +9,7 @@ nav_name: resources
 * [Data Model Primer](https://www.mediawiki.org/wiki/Wikibase/DataModel/Primer)
 * [Doxygen PHP docs](http://wbdoc.wmflabs.org/)
 * [Coding conventions](https://www.mediawiki.org/wiki/Wikibase/Coding_conventions)
-* [Presentation: Wikibase](http://bit.ly/wikibase-smwcon) (`page down` and `page up` to navigate)
+* [Presentation: Wikibase](http://bit.ly/wikibase-smwcon)
 
 ### FAQ
 
