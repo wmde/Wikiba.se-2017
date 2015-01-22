@@ -15,7 +15,7 @@ nav_name: resources
 
 ##### What is the difference between Wikibase and Wikidata?
 
-Wikibase is the name of the software that was originally written for, and used by, the
+Wikibase is the name of the software that was originally written for, and is used by, the
 [Wikidata project](https://www.wikidata.org/). Wikidata is the free knowledge base that
 anyone can edit, used by Wikipedia.
 
