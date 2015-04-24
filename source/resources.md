@@ -7,9 +7,18 @@ nav_name: resources
 ## Resources
 
 * [Data Model Primer](https://www.mediawiki.org/wiki/Wikibase/DataModel/Primer)
-* [Doxygen PHP docs](http://wbdoc.wmflabs.org/)
-* [Coding conventions](https://www.mediawiki.org/wiki/Wikibase/Coding_conventions)
+* [API documentation](https://www.mediawiki.org/wiki/Wikibase/API)
 * [Presentation: Wikibase](http://bit.ly/wikibase-smwcon)
+
+## Developer resources
+
+For documentation and infrastructure of specific [applications]({{site.url}}/applications)
+or [components](({{site.url}}/components)), see their dedicated pages.
+
+* [Programmer's guide to Wikibase](https://www.mediawiki.org/wiki/Wikibase/Programmer%27s_guide_to_Wikibase)
+* [Coding conventions](https://www.mediawiki.org/wiki/Wikibase/Coding_conventions)
+* [Doxygen PHP docs](http://wbdoc.wmflabs.org/)
+
 
 ## FAQ
 
