@@ -8,6 +8,8 @@ nav_name: components
 
 <h2 id="wikibase">Wikibase PHP libraries</h2>
 
+<p>These libraries deal with the Wikibase domain and form the core of the Wikibase software.</p>
+
 <table class="table table-striped table-bordered components">
 	<thead>
 		<tr>
@@ -74,7 +76,13 @@ nav_name: components
     -->
 </table>
 
-<h2 id="php">Associated PHP libraries</h2>
+<h2 id="data-values">DataValues PHP libraries</h2>
+
+<p>
+    These libraries define the most basic values that make up the Wikibase DataModel. While they are
+    a critical part of the Wikibase software, they are independent of the Wikibase domain and can be
+    used in other contexts. They are primarily developed for, and used by, the Wikibase software.
+</p>
 
 <table class="table table-striped table-bordered components">
     <thead>
@@ -84,24 +92,6 @@ nav_name: components
         <th class="status">Status</th>
     </tr>
     </thead>
-    <tr>
-        <td><a href="https://github.com/wmde/Diff">Diff</a></td>
-        <td>Small library for representing differences between data structures, computing such differences, and applying them as patches.</td>
-        <td>
-            <a href="https://packagist.org/packages/diff/diff"><img src="https://poser.pugx.org/diff/diff/version.png" alt="version"></a>
-            <a href="https://travis-ci.org/wmde/Diff"><img src="https://travis-ci.org/wmde/Diff.svg?branch=master" alt="build"></a>
-            <a href="https://scrutinizer-ci.com/g/wmde/Diff"><img src="https://scrutinizer-ci.com/g/wmde/Diff/badges/coverage.png?b=master" alt="coverage"></a>
-        </td>
-    </tr>
-    <tr>
-        <td><a href="https://github.com/wmde/Serialization">Serialization</a></td>
-        <td>Small library defining a Serializer and a Deserializer interface.</td>
-        <td>
-            <a href="https://packagist.org/packages/serialization/serialization"><img src="https://poser.pugx.org/serialization/serialization/version.png" alt="version"></a>
-            <a href="https://travis-ci.org/wmde/Serialization"><img src="https://travis-ci.org/wmde/Serialization.svg?branch=master" alt="build"></a>
-            <a href="https://scrutinizer-ci.com/g/wmde/Serialization"><img src="https://scrutinizer-ci.com/g/wmde/Serialization/badges/coverage.png?b=master" alt="coverage"></a>
-        </td>
-    </tr>
     <tr>
         <td><a href="https://github.com/DataValues/DataValues">DataValues</a></td>
         <td>Defines the DataValue interface and some trivial implementations.</td>
@@ -163,6 +153,41 @@ nav_name: components
             <a href="https://packagist.org/packages/data-values/serialization"><img src="https://poser.pugx.org/data-values/serialization/version.png" alt="version"></a>
             <a href="https://travis-ci.org/DataValues/Serialization"><img src="https://travis-ci.org/DataValues/Serialization.svg?branch=master" alt="build"></a>
             <a href="https://scrutinizer-ci.com/g/DataValues/Serialization"><img src="https://scrutinizer-ci.com/g/DataValues/Serialization/badges/coverage.png?b=master" alt="coverage"></a>
+        </td>
+    </tr>
+</table>
+
+<h2 id="php">Associated PHP libraries</h2>
+
+<p>
+    These are infrastructure libraries that have been created for, and are currently used by, the
+    Wikibase software.
+</p>
+
+<table class="table table-striped table-bordered components">
+    <thead>
+    <tr>
+        <th class="library">Library</th>
+        <th>Description</th>
+        <th class="status">Status</th>
+    </tr>
+    </thead>
+    <tr>
+        <td><a href="https://github.com/wmde/Diff">Diff</a></td>
+        <td>Small library for representing differences between data structures, computing such differences, and applying them as patches.</td>
+        <td>
+            <a href="https://packagist.org/packages/diff/diff"><img src="https://poser.pugx.org/diff/diff/version.png" alt="version"></a>
+            <a href="https://travis-ci.org/wmde/Diff"><img src="https://travis-ci.org/wmde/Diff.svg?branch=master" alt="build"></a>
+            <a href="https://scrutinizer-ci.com/g/wmde/Diff"><img src="https://scrutinizer-ci.com/g/wmde/Diff/badges/coverage.png?b=master" alt="coverage"></a>
+        </td>
+    </tr>
+    <tr>
+        <td><a href="https://github.com/wmde/Serialization">Serialization</a></td>
+        <td>Small library defining a Serializer and a Deserializer interface.</td>
+        <td>
+            <a href="https://packagist.org/packages/serialization/serialization"><img src="https://poser.pugx.org/serialization/serialization/version.png" alt="version"></a>
+            <a href="https://travis-ci.org/wmde/Serialization"><img src="https://travis-ci.org/wmde/Serialization.svg?branch=master" alt="build"></a>
+            <a href="https://scrutinizer-ci.com/g/wmde/Serialization"><img src="https://scrutinizer-ci.com/g/wmde/Serialization/badges/coverage.png?b=master" alt="coverage"></a>
         </td>
     </tr>
 </table>
