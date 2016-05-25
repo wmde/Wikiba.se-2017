@@ -13,7 +13,7 @@ nav_name: resources
 ## Developer resources
 
 For documentation and infrastructure of specific [applications]({{site.url}}/applications)
-or [components](({{site.url}}/components)), see their dedicated pages.
+or [components]({{site.url}}/components), see their dedicated pages.
 
 * [Programmer's guide to Wikibase](https://www.mediawiki.org/wiki/Wikibase/Programmer%27s_guide_to_Wikibase)
 * [Coding conventions](https://www.mediawiki.org/wiki/Wikibase/Coding_conventions)
