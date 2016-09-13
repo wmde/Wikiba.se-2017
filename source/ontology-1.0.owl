@@ -27,7 +27,7 @@
   // Classes
   //
   ///////////////////////////////////////////////////////////////////////////////////////
-   -->
+  -->
 
   <owl:Class rdf:about="&wikibase;Dump">
     <rdfs:label>Dump</rdfs:label>
@@ -50,7 +50,6 @@
       <rdfs:comment>Wikibase property.</rdfs:comment>
       <rdfs:subClassOf rdf:resource="&wikibase;Entity"/>
   </owl:Class>
-
 
   <owl:Class rdf:about="&wikibase;Statement">
     <rdfs:label>Statement</rdfs:label>
@@ -87,17 +86,23 @@
     <rdfs:comment>Wikibase extended value representing quantity.</rdfs:comment>
     <rdfs:subClassOf rdf:resource="&wikibase;Value"/>
   </owl:Class>
+
   <owl:Class rdf:about="&wikibase;TimeValue">
     <rdfs:label>TimeValue</rdfs:label>
     <rdfs:comment>Wikibase extended value representing time.</rdfs:comment>
     <rdfs:subClassOf rdf:resource="&wikibase;Value"/>
   </owl:Class>
+
   <owl:Class rdf:about="&wikibase;GlobecoordinateValue">
     <rdfs:label>GlobecoordinateValue</rdfs:label>
     <rdfs:comment>Wikibase extended value representing geographic coordinate.</rdfs:comment>
     <rdfs:subClassOf rdf:resource="&wikibase;Value"/>
   </owl:Class>
 
+  <owl:Class rdf:about="&wikibase;GeoAutoPrecision">
+     <rdfs:label>GeoAutoPrecision</rdfs:label>
+     <rdfs:comment>This coordinate value uses automatic precision since the user did not specify one.</rdfs:comment>
+  </owl:Class>
 
   <!--
   ///////////////////////////////////////////////////////////////////////////////////////
@@ -105,29 +110,39 @@
   // Individuals
   //
   ///////////////////////////////////////////////////////////////////////////////////////
-   -->
+  -->
+
+  <!-- Individual statement ranks -->
 
   <owl:NamedIndividual rdf:about="&wikibase;DeprecatedRank">
       <rdfs:label>DeprecatedRank</rdfs:label>
-      <rdfs:comment>Deprecated rank.</rdfs:comment>
+      <rdfs:comment>Deprecated statement rank.</rdfs:comment>
       <rdf:type rdf:resource="&wikibase;Rank"/>
   </owl:NamedIndividual>
 
   <owl:NamedIndividual rdf:about="&wikibase;NormalRank">
       <rdfs:label>NormalRank</rdfs:label>
-      <rdfs:comment>Normal rank.</rdfs:comment>
+      <rdfs:comment>Normal statement rank.</rdfs:comment>
       <rdf:type rdf:resource="&wikibase;Rank"/>
   </owl:NamedIndividual>
 
   <owl:NamedIndividual rdf:about="&wikibase;PreferredRank">
       <rdfs:label>PreferredRank</rdfs:label>
-      <rdfs:comment>Preferred rank.</rdfs:comment>
+      <rdfs:comment>Preferred statement rank.</rdfs:comment>
       <rdf:type rdf:resource="&wikibase;Rank"/>
   </owl:NamedIndividual>
+
+  <!-- Individual property types supported by Wikibase -->
 
   <owl:NamedIndividual rdf:about="&wikibase;CommonsMedia">
       <rdfs:label>CommonsMedia</rdfs:label>
       <rdfs:comment>Wikimedia Commons reference type.</rdfs:comment>
+      <rdf:type rdf:resource="&wikibase;PropertyType"/>
+  </owl:NamedIndividual>
+
+  <owl:NamedIndividual rdf:about="&wikibase;ExternalId">
+      <rdfs:label>WikibaseExternalId</rdfs:label>
+      <rdfs:comment>Type for referring to ID defined by external authority.</rdfs:comment>
       <rdf:type rdf:resource="&wikibase;PropertyType"/>
   </owl:NamedIndividual>
 
@@ -173,13 +188,21 @@
       <rdf:type rdf:resource="&wikibase;PropertyType"/>
   </owl:NamedIndividual>
 
+  <!-- Individual property types supported by known Wikibase extensions -->
+
+  <owl:NamedIndividual rdf:about="&wikibase;Math">
+      <rdfs:label>Mathematial expression</rdfs:label>
+      <rdfs:comment>Type for mathematical expressions as supported by the Math extension.</rdfs:comment>
+      <rdf:type rdf:resource="&wikibase;PropertyType"/>
+  </owl:NamedIndividual>
+
   <!--
   ///////////////////////////////////////////////////////////////////////////////////////
   //
   // Properties
   //
   ///////////////////////////////////////////////////////////////////////////////////////
-   -->
+  -->
 
   <owl:ObjectProperty rdf:about="&wikibase;rank">
       <rdfs:label>rank</rdfs:label>
@@ -193,13 +216,13 @@
       <rdfs:comment>Badge on the Wiki page.</rdfs:comment>
       <rdfs:range rdf:resource="&wikibase;Item"/>
   </owl:ObjectProperty>
- 
+
   <owl:ObjectProperty rdf:about="&wikibase;directClaim">
       <rdfs:label>directClaim</rdfs:label>
       <rdfs:comment>Link between Wikibase Property and direct claim predicate.</rdfs:comment>
       <rdfs:domain rdf:resource="&wikibase;Property"/>
   </owl:ObjectProperty>
- 
+
   <owl:ObjectProperty rdf:about="&wikibase;claim">
       <rdfs:label>claim</rdfs:label>
       <rdfs:comment>Link between Wikibase Property and claim predicate.</rdfs:comment>
@@ -218,6 +241,12 @@
       <rdfs:domain rdf:resource="&wikibase;Property"/>
   </owl:ObjectProperty>
 
+  <owl:ObjectProperty rdf:about="&wikibase;statementValueNormalized">
+      <rdfs:label>statementValueNormalized</rdfs:label>
+      <rdfs:comment>Link between Wikibase Property and statement normalized value predicate.</rdfs:comment>
+      <rdfs:domain rdf:resource="&wikibase;Property"/>
+  </owl:ObjectProperty>
+
   <owl:ObjectProperty rdf:about="&wikibase;qualifier">
       <rdfs:label>qualifier</rdfs:label>
       <rdfs:comment>Link between Wikibase Property and qualifier predicate.</rdfs:comment>
@@ -230,6 +259,12 @@
       <rdfs:domain rdf:resource="&wikibase;Property"/>
   </owl:ObjectProperty>
 
+  <owl:ObjectProperty rdf:about="&wikibase;qualifierValueNormalized">
+      <rdfs:label>qualifierValueNormalized</rdfs:label>
+      <rdfs:comment>Link between Wikibase Property and qualifier normalized value predicate.</rdfs:comment>
+      <rdfs:domain rdf:resource="&wikibase;Property"/>
+  </owl:ObjectProperty>
+
   <owl:ObjectProperty rdf:about="&wikibase;reference">
       <rdfs:label>reference</rdfs:label>
       <rdfs:comment>Link between Wikibase Property and reference predicate.</rdfs:comment>
@@ -239,6 +274,12 @@
   <owl:ObjectProperty rdf:about="&wikibase;referenceValue">
       <rdfs:label>referenceValue</rdfs:label>
       <rdfs:comment>Link between Wikibase Property and reference value predicate.</rdfs:comment>
+      <rdfs:domain rdf:resource="&wikibase;Property"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="&wikibase;referenceValueNormalized">
+      <rdfs:label>referenceValue</rdfs:label>
+      <rdfs:comment>Link between Wikibase Property and reference normalized value predicate.</rdfs:comment>
       <rdfs:domain rdf:resource="&wikibase;Property"/>
   </owl:ObjectProperty>
 
@@ -304,6 +345,13 @@
       <rdfs:range rdf:resource="&wikibase;Item"/>
   </owl:ObjectProperty>
 
+  <owl:ObjectProperty rdf:about="&wikibase;quantityNormalized">
+        <rdfs:label>quantityNormalized</rdfs:label>
+        <rdfs:comment>Representation of this quantity in standard units.</rdfs:comment>
+        <rdfs:domain rdf:resource="&wikibase;QuantityValue"/>
+        <rdfs:range rdf:resource="&wikibase;QuantityValue"/>
+  </owl:ObjectProperty>
+
   <owl:ObjectProperty rdf:about="&wikibase;timeCalendarModel">
       <rdfs:label>timeCalendarModel</rdfs:label>
       <rdfs:comment>Preferred calendar used to display this date to the user.</rdfs:comment>
@@ -330,6 +378,11 @@
       <rdfs:comment>Time value as datetime literal.</rdfs:comment>
       <rdfs:domain rdf:resource="&wikibase;TimeValue"/>
       <rdfs:range rdf:resource="&xsd;dateTime"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="&wikibase;wikiGroup">
+      <rdfs:label>wikiGroup</rdfs:label>
+      <rdfs:comment>Wiki group that the site belongs to.</rdfs:comment>
   </owl:DatatypeProperty>
 
 </rdf:RDF>
