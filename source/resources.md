@@ -17,8 +17,8 @@ or [components]({{site.url}}/components), see their dedicated pages.
 
 * [Programmer's guide to Wikibase](https://www.mediawiki.org/wiki/Wikibase/Programmer%27s_guide_to_Wikibase)
 * [Coding conventions](https://www.mediawiki.org/wiki/Wikibase/Coding_conventions)
-* [Doxygen PHP docs](https://doc.wikimedia.org/Wikibase/master/php/)
-* [JSDuck JavaScript docs](https://doc.wikimedia.org/Wikibase/master/js/)
+* [Wikibase PHP API documentation](https://doc.wikimedia.org/Wikibase/master/php/)
+* [Wikibase JavaScript API documentation](https://doc.wikimedia.org/Wikibase/master/js/)
 
 
 ## FAQ
