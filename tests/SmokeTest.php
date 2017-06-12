@@ -11,7 +11,7 @@ class SmokeTest extends \PHPUnit_Framework_TestCase {
 
 	public static function setUpBeforeClass() {
 		self::$PAGE_PATH = __DIR__ . '/../output_test/';
-		exec( 'sculpin generate --env=test' );
+		exec( 'vendor/bin/sculpin generate --env=test' );
 	}
 
 	public function testMainPageContainsIntroText() {
