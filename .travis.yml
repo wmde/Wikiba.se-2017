@@ -3,9 +3,6 @@ language: php
 php: 5.6
 
 before_script:
-    - curl -O https://sculpin.io/sculpin.phar
-    - chmod +x sculpin.phar
-    - sudo mv sculpin.phar /usr/bin/sculpin
     - composer install
 
 script: phpunit
