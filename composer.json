@@ -1,10 +1,9 @@
 {
     "require": {
-	"sculpin/sculpin": "~2.1",
+	"sculpin/sculpin": "~2.1@dev",
         "worldskills/bootstrap": "~3.2"
     },
     "config": {
         "component-dir": "source/components"
-    },
-    "minimum-stability": "dev"
+    }
 }
